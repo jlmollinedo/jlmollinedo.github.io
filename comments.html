@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Comentarios</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/ajustes.css"><!--Enlace al css-->
+	</head>
+	<body background="imagenes/fondos/comentario.jpg" style="background-size: cover" id="comments"><!--Configuración del fondo de la página, enlace a los estilos del css-->
+		<form action="/guardar-comentario" method="POST"><!--Creación de formulario con el propósito de guardar la información si se dispusiera de biblioteca-->
+			<table><!--Creación de una tabla para la disposición de los elementos-->
+				<tr>
+					<td><label for="nombre"><h1 id="headings">Usuario</h1></label></td><!--Creación del encabezado indicando el usuario-->
+					<td><label for="email"><h1 id="headings">Email</h1></label></td><!--Creación del encabezado indicando el email-->
+				</tr>
+				<tr>
+					<td><input type="text" id="text" required></td><!--Creación de un hueco para escribir el usuario-->
+					<td><input type="email" id="text" required></td><!--Creación de un hueco para escribir el email-->
+				</tr>
+			</table>
+			<ul><!--Lista para la organización de los elementos-->
+				<li><textarea id="comentario" required></textarea></li><!--Creación de un hueco para escribir un comentario-->
+				<li><button type="submit">Enviar</button></li><!--Creación de un botón para enviar dicho comentario-->
+			</ul>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Zen+Dots&display=swap');
+
+#headings{ /*Configuración de los encabezados en cualquier pantalla, salvo excepciones*/
+	margin-top: 30px;
+	font-family: "Goldman";
+	color: red;
+	font-size: 40px;
+}
+#paragraphs{ /*Configuración de los párrafos en cualquier pantalla, salvo excepciones*/
+	font-family: "Helvetica";
+	margin-top: 15;
+	color: black;
+	font-size: 17px;
+	text-align: justify;
+	white-space: pre-line;
+	font-weight: bold;
+	word-wrap: break-word;
+	width: 85vw;
+}
+
+
+#header ul{ /*Configuración de la disposición de las pantallas: portada y paddock*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+}
+#header ul{ /*Márgenes especiales para los elementos de las pantallas: portada y paddock*/
+	margin-bottom: 35px;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 40px;
+}
+#header ul:first-child{ /*Márgen para el primer elemento*/
+	margin-top: 40px;
+}
+#header ul:last-child{ /*Márgen para el último elemento*/
+	margin-bottom:40px;
+}
+#general img { /*Configuración de las imágenes de: portada y paddock*/
+	height: 38vh;
+	width: auto;
+}
+
+
+#otralista{ /*todos los elementos de la barra menú: imágenes y listas*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 10px; /*Márgenes específicos para el menú*/
+	padding-left: 2px;
+	padding-right: 3px;
+	list-style: none; /*Configuración para evitar la aparición de puntos en las listas*/
+}
+#otralista li { /*Set de configuraciones de márgen especiales para los elementos de las listas*/
+    margin-bottom: 12vh;
+}
+#otralista li:last-child {
+    margin-bottom: 10px;
+}
+#otralista li:first-child {
+    margin-top: 10px;
+}
+#otralista img { /*Configuración estándar del tamaño de los iconos del menú, salvo excepciones*/
+    height: 7.5vh;
+    width: auto;
+}
+
+
+#champions img{ /*Establecimiento de las imágenes flotantes que acompañan al texto*/
+	width: 25vw;
+	height: auto;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+#champions{ /*Configuración de la pantalla de historia*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+#champions video{ /*Establecimiento del tamaño del vídeo*/
+	margin-top: 30px;
+	width: 80vw;
+	height: auto;
+}
+.explicaciones{ /*Configuración de la alineación de los elementos*/
+	align-items: center;
+}
+
+#cartas{ /*Configuración de todas las pantallas que muestran targetas*/
+	padding: 20px; /*Establecimiento de márgen*/
+}
+#cartas ul{ /*Disposición de la lista en la pantalla*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+}
+#cartas li{ /*Disposición de los elementos dentro de la lista*/
+	margin-right: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#cartas img{ /*Establecimiento del tamaño estándar de imagen*/
+	width: 20vw;
+	height: auto;
+}
+
+
+.marquesina { /*Marquesina de otra forma porque <marquee> está obsoleto*/
+	display: inline-block;
+	width: 100%;
+	white-space: nowrap; /*Configuración para que no se corte el texto y permanezca en una línea*/
+	box-sizing: border-box;
+	animation: scroll-left 12s linear infinite; /*Tiempo en el que se desplaza el texto*/
+}
+@keyframes scroll-left { /*Comando para que el texto se desplace de derecha a izquierda*/
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+
+#comments{  /*Configuración de los márgenes de la pantalla de comentarios*/
+	padding: 20px;
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+}
+#comments table{ /*Configuración de la tabla*/
+	border-spacing: 20px;
+	margin-left: 20px;
+}
+#comments ul{ /*Configuración de la lista sin puntos*/
+	list-style: none;
+}
+#comments li{ /*Configuración de los márgenes de los elementos de la lista*/
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+#text { /*Configuración para crear un espacio mayor para escribir: usuario y email*/
+	width: 45vh; 
+	height: 5vh; 
+	font-size: 16px; 
+	padding: 10px;
+}
+#comentario{ /*Configuración para crear un espacio mayor para escribir: comentario*/
+	width: 80vw; 
+	height: 60vh; 
+}
+
+
+#mattandtommy{ /*Configuración del banner creado para la página del podcast: media*/
+	 width: 100vw;
+	 height: auto;
+	 position:absolute;
+	 top:0px;
+	 left:0px;
+}
+.mediascreen{ /*Configuración de la disposición del div dentro de la pantalla*/
+	margin-top: 65vh;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+}
+.mediascreen h1{ /*Establecimiento de un encabezado distinto*/
+	font-size: 50px;
+	font-family: "Goldman";
+	color: white;	
+	margin-bottom: -10px; /*Ajuste del márgen para que ambos encabezados no queden muy separados*/
+}
+.mediascreen h2{ /*Configuración de un segundo encabezado*/
+	font-size: 30px;
+	font-family: "Goldman";
+	color: white;
+}
+.tanda{ /*Configuración de los enlaces pertenecientes a la pantalla: media*/
+	text-align: center;
+	align-items:center;
+	display: flex;
+	justify-content: space-between;
+}
+.link{ /*Configuración del aspecto del texto del href antes de usarlo*/
+	color:white;
+	text-decoration: none;
+}
+.link:visited{ /*Configuración del aspecto del texto del href después de visitarlo*/
+	color: #7E1212;
+}
+.link:hover{ /*Configuración del aspecto del texto cuando pasas el ratón por encima del mismo*/
+	color:red;
+}
+.mediascreen2{ /*Configuración de la disposición del otro div dentro de la pantalla*/
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+}
+.mediascreen2 h1{ /*Establecimiento de un encabezado distinto*/
+	font-size: 30px;
+	font-family: "Goldman";	
+}
+
+
+#cars{ /*Configuración de los márgenes de la página sobre las parte mecánica de los coches*/
+	padding: 20px;
+}
+#cars img{/*Configuración del tamaño de las imagenes de la página*/
+	width: auto;
+	height: 37.5vh;
+}
+#cars ul{/*Configuración de la disposición de los elementos de la lista de la página*/
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 30px;
+	margin-bottom: 50px;
+}
